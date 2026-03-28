@@ -14,7 +14,7 @@ function App() {
   }
 
   return (
-    <div className="app">
+    <div className={`app${current ? " app--started" : ""}`}>
       <div className="header">
         <h1>Algorithm Problem Randomizer</h1>
         <button className="roll-btn" onClick={getRandomProblem}>
