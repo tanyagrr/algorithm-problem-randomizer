@@ -55,13 +55,15 @@ function App() {
             </div>
           </div>
         )}
-        <div className="editor-wrapper">
-          <iframe
-            src="https://onecompiler.com/embed/javascript?theme=dark&hideTitle=true&hideNew=true"
-            width="100%"
-            height="100%"
-          />
-        </div>
+        {current && (
+          <div className="editor-wrapper">
+            <iframe
+              src="https://onecompiler.com/embed/javascript?theme=dark&hideTitle=true&hideNew=true"
+              width="100%"
+              height="100%"
+            />
+          </div>
+        )}
       </div>
     </>
   );
